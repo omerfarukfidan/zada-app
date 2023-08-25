@@ -1,22 +1,24 @@
 /* components/Navbar.module.css */
 
 .navbar {
-  background-color: #20232a;
-  color: #61dafb;
-  padding: 10px 0;
+  background-color: #ecfcc2;
+  color: #070707;
+  padding: 20px 0; /* Yüksekliği artırarak daha büyük yapın */
   text-align: center;
   position: fixed;
-  top: 0; /* Sayfanın en üstüne sabitleme */
+  top: 0;
   left: 0;
   right: 0;
   z-index: 100;
-  opacity: 0.9; /* Hafif bir opaklık ekleyebilirsiniz */
-  transition: opacity 0.3s ease-in-out; /* Opaklık geçiş efekti */
+  opacity: 0.9;
+  transition: opacity 0.3s ease-in-out;
+  font-family: "Courier New", Courier, monospace; /* Yazı tipini ayarlayın */
+  font-size: 20px; /* Yazı boyutunu ayarlayın */
 }
 
 .navbar.hidden {
-  opacity: 0; /* Scroll aşağıda navbar'ı gizle */
-  pointer-events: none; /* Tıklamaları devre dışı bırak */
+  opacity: 0;
+  pointer-events: none;
 }
 
 .navList {
@@ -24,7 +26,7 @@
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center; /* Öğeleri yatayda hizalama */
+  justify-content: center;
 }
 
 .navItem {
@@ -32,10 +34,10 @@
 }
 
 .navItem a {
-  color: #61dafb;
+  color: #000000;
   text-decoration: none;
   font-weight: bold;
-  font-size: 18px; /* Yazı boyutunu ayarlayın */
+  font-size: 18px;
   transition: color 0.3s ease;
 }
 

@@ -1,0 +1,9 @@
+/* styles/global-styles.css */
+
+body {
+    font-family: "Courier New", Courier, monospace; /* Tüm sayfalarda kullanılacak yazı tipi */
+    font-size: 16px; /* Yazı boyutunu ayarlayın */
+    line-height: 1.5; /* Satır yüksekliğini ayarlayın */
+    /* Diğer yazı tipi stil özelliklerini burada ekleyebilirsiniz */
+  }
+  
