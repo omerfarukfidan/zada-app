@@ -1,5 +1,8 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+// pages/index.js
+
+import Head from 'next/head';
+import Navbar from '../components/Navbar';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
@@ -10,9 +13,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Navbar /> {/* Navigasyon çubuğunu ekliyoruz */}
+      
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to My Next.js Website</h1>
+        <h1 className={styles.title}>Zada, gelecek için temiz enerji!</h1>
       </main>
     </div>
-  )
+  );
 }

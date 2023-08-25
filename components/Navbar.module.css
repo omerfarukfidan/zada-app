@@ -1,0 +1,44 @@
+/* components/Navbar.module.css */
+
+.navbar {
+  background-color: #20232a;
+  color: #61dafb;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  top: 0; /* Sayfanın en üstüne sabitleme */
+  left: 0;
+  right: 0;
+  z-index: 100;
+  opacity: 0.9; /* Hafif bir opaklık ekleyebilirsiniz */
+  transition: opacity 0.3s ease-in-out; /* Opaklık geçiş efekti */
+}
+
+.navbar.hidden {
+  opacity: 0; /* Scroll aşağıda navbar'ı gizle */
+  pointer-events: none; /* Tıklamaları devre dışı bırak */
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Öğeleri yatayda hizalama */
+}
+
+.navItem {
+  margin: 0 20px;
+}
+
+.navItem a {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px; /* Yazı boyutunu ayarlayın */
+  transition: color 0.3s ease;
+}
+
+.navItem a:hover {
+  color: #f8f8f8;
+}
