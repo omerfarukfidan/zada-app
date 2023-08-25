@@ -1,18 +1,32 @@
-/* about.module.css (veya Home.module.css) */
-
+/* project.module.css */
 
 .container {
-    min-height: 100vh;
-    background-image: url('/about-bacground.jpg'); /* Hakkımızda sayfasının arka plan görselinin yolunu belirtin */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  /* Diğer stilleri burada ekleyebilirsiniz */
-  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Beyaz ve hafif transparan bir arka plan rengi */
+  margin-top: 110px; /* Projemiz başlığını Navigation barın altına çekmek için bir üst boşluk ekleyin */
+}
+
+.heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* İçerik bölümleri için stiller */
+.contentSection {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Beyaz ve hafif transparan bir arka plan rengi */
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* İçerik kutularına hafif bir gölge ekleyin */
+}
+
+.contentSection h2 {
+  font-size: 24px;
+}
+
+.contentSection p {
+  font-size: 16px;
+  line-height: 1.5;
+}

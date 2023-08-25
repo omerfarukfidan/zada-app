@@ -4,6 +4,14 @@ body {
     font-family: "Courier New", Courier, monospace; /* Tüm sayfalarda kullanılacak yazı tipi */
     font-size: 16px; /* Yazı boyutunu ayarlayın */
     line-height: 1.5; /* Satır yüksekliğini ayarlayın */
+   
+   /* sonradan eklenen kısım */
+    background-image: url("/background.jpg"); /* Kullanmak istediğiniz arka plan resmi */
+  background-size: cover; /* Resmi ekran boyutuna uyacak şekilde sığdırın */
+  background-repeat: no-repeat; /* Arka plan resminin tekrar etmemesini sağlayın */
+  background-attachment: fixed; /* Arka planın sabit kalmasını sağlayın */
+  background-position: center center; /* Resmin merkezlenmesini sağlayın */
     /* Diğer yazı tipi stil özelliklerini burada ekleyebilirsiniz */
-  }
   
+  }
+  /* global.css */
