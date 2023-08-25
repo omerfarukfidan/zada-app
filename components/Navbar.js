@@ -6,26 +6,41 @@ import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const [isNavVisible, setNavVisible] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   const handleScroll = () => {
     const scrollTop = window.scrollY;
-    const screenWidth = window.innerWidth; // Ekran genişliğini alın
+    const screenWidth = window.innerWidth;
 
     if (scrollTop > 20 || screenWidth <= 768) {
-      setNavVisible(false); // Scroll aşağıda veya mobil cihazlarda, navbar'ı gizle
+      setNavVisible(false);
     } else {
-      setNavVisible(true); // Scroll yukarıda ve büyük ekranlarda, navbar'ı göster
+      setNavVisible(true);
+    }
+  };
+
+  const handleResize = () => {
+    const screenWidth = window.innerWidth;
+    if (screenWidth <= 768) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
     }
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Sayfa yüklendiğinde ekran genişliğini kontrol etmek için
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
-  const navClass = `${styles.navbar} ${isNavVisible ? "" : styles.hidden}`;
+  const navClass = `${styles.navbar} ${isNavVisible ? "" : styles.hidden} ${
+    isMobile ? styles.mobile : ""
+  }`;
 
   return (
     <nav className={navClass}>
@@ -43,7 +58,7 @@ const Navbar = () => {
           <Link href="/project">Projemiz</Link>
         </li>
         <li className={styles.navItem}>
-          <Link href="/faq">SSS</Link> {/* Yeni bağlantı */}
+          <Link href="/faq">SSS</Link>
         </li>
       </ul>
     </nav>

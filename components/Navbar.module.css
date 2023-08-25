@@ -3,7 +3,7 @@
 .navbar {
   background-color: #9E9D24;
   color: #070707;
-  padding: 20px 0; /* Yüksekliği artırarak daha büyük yapın */
+  padding: 20px 0;
   text-align: center;
   position: fixed;
   top: 0;
@@ -12,16 +12,16 @@
   z-index: 100;
   opacity: 0.9;
   transition: opacity 0.3s ease-in-out;
-  font-family: "Courier New", Courier, monospace; /* Yazı tipini ayarlayın */
-  font-size: 20px; /* Yazı boyutunu ayarlayın */
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
   display: flex;
-  justify-content: space-between; /* Logo ve menüyü yatay olarak hizala */
-  align-items: center; /* Logo ve menüyü dikey olarak hizala */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar.hidden {
   opacity: 0;
-  pointer-events: none;
+  pointer-events: none; /* Navbar gizliyken tıklanamaz olmalı */
 }
 
 .navList {
@@ -40,7 +40,7 @@
   color: #000000;
   text-decoration: none;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
   transition: color 0.3s ease;
 }
 
@@ -49,10 +49,9 @@
 }
 
 .logo {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Özel bir yazı tipi ekleyebilirsiniz */
-  font-size: 24px; /* Yazı tipi boyutunu ayarlayın */
-  margin-right: 10px; /* Marka adı ile diğer öğeler arasında bir boşluk bırakın */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  margin-right: 10px;
   margin-left: 20px;
-  color: #ffffff; /* Yazı rengini ayarlayın */
-  /* Diğer özel stiller ekleyebilirsiniz */
+  color: #ffffff;
 }
