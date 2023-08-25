@@ -9,11 +9,12 @@ const Navbar = () => {
 
   const handleScroll = () => {
     const scrollTop = window.scrollY;
+    const screenWidth = window.innerWidth; // Ekran genişliğini alın
 
-    if (scrollTop > 20) {
-      setNavVisible(false); // Scroll aşağıda, navbar'ı gizle
+    if (scrollTop > 20 || screenWidth <= 768) {
+      setNavVisible(false); // Scroll aşağıda veya mobil cihazlarda, navbar'ı gizle
     } else {
-      setNavVisible(true); // Scroll yukarıda, navbar'ı göster
+      setNavVisible(true); // Scroll yukarıda ve büyük ekranlarda, navbar'ı göster
     }
   };
 

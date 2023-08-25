@@ -1,7 +1,7 @@
 /* components/Navbar.module.css */
 
 .navbar {
-  background-color: 		#9E9D24;
+  background-color: #9E9D24;
   color: #070707;
   padding: 20px 0; /* Yüksekliği artırarak daha büyük yapın */
   text-align: center;
@@ -14,6 +14,9 @@
   transition: opacity 0.3s ease-in-out;
   font-family: "Courier New", Courier, monospace; /* Yazı tipini ayarlayın */
   font-size: 20px; /* Yazı boyutunu ayarlayın */
+  display: flex;
+  justify-content: space-between; /* Logo ve menüyü yatay olarak hizala */
+  align-items: center; /* Logo ve menüyü dikey olarak hizala */
 }
 
 .navbar.hidden {
@@ -49,11 +52,7 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Özel bir yazı tipi ekleyebilirsiniz */
   font-size: 24px; /* Yazı tipi boyutunu ayarlayın */
   margin-right: 10px; /* Marka adı ile diğer öğeler arasında bir boşluk bırakın */
+  margin-left: 20px;
   color: #ffffff; /* Yazı rengini ayarlayın */
   /* Diğer özel stiller ekleyebilirsiniz */
-}
-
-.brand {
-
-  align-items: center; /* Marka adını navbara dikey olarak hizala */
 }
