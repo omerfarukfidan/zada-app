@@ -7,7 +7,7 @@ export default function Project() {
   return (
     <div>
       <Head>
-        <title>Projemiz - My Next.js Website</title>
+        <title>Projemiz</title>
         <meta name="description" content="Projemiz hakkında bilgi." />
         <link rel="icon" href="/favicon.ico" />
       </Head>

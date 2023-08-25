@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div>
       <Head>
-        <title>Hakkımızda - My Next.js Website</title>
+        <title>Hakkımızda</title>
         <meta name="description" content="Proje ekibi hakkında bilgi." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
