@@ -1,0 +1,18 @@
+/* components/Footer.module.css */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed; /* Sayfanın altına sabit konumlandırın */
+  bottom: 0; /* Sayfanın altına sabitleyin */
+  left: 0;
+  right: 0;
+  z-index: 999; /* Diğer öğelerin üzerinde görünmesini sağlayın */
+  transition: all 0.3s ease; /* Yavaşça görünür hale gelmesini sağlayın */
+}
+
+.hidden {
+  transform: translateY(100%); /* Sayfanın dışına kaydırarak gizleyin */
+}

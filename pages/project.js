@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/Footer"; // Footer'ı içe aktarın
 import Navbar from "../components/Navbar";
 import styles from "../styles/project.module.css";
 import { Link as ScrollLink, Element } from "react-scroll"; // react-scroll'den gerekli bileşenleri ekleyin
@@ -149,6 +150,7 @@ export default function Project() {
           </div>
         </main>
       </div>
+      <Footer /> {/* Footer'ı ekleyin */}
     </div>
   );
 }

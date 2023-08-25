@@ -44,3 +44,16 @@
 .navItem a:hover {
   color: #f8f8f8;
 }
+
+.logo {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Özel bir yazı tipi ekleyebilirsiniz */
+  font-size: 24px; /* Yazı tipi boyutunu ayarlayın */
+  margin-right: 10px; /* Marka adı ile diğer öğeler arasında bir boşluk bırakın */
+  color: #ffffff; /* Yazı rengini ayarlayın */
+  /* Diğer özel stiller ekleyebilirsiniz */
+}
+
+.brand {
+
+  align-items: center; /* Marka adını navbara dikey olarak hizala */
+}

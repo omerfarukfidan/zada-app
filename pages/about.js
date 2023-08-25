@@ -1,5 +1,5 @@
 // pages/about.js
-
+import Footer from "../components/Footer"; // Footer'ı içe aktarın
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import styles from "../styles/about.module.css"; // CSS dosyanızın yolunu burada belirtin
@@ -35,6 +35,7 @@ export default function About() {
           </div>
         </main>
       </div>
+      <Footer /> {/* Footer'ı ekleyin */}
     </div>
   );
 }

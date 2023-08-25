@@ -28,7 +28,10 @@ const Navbar = () => {
 
   return (
     <nav className={navClass}>
-      {<ul className={styles.navList}>
+      <div className={styles.brand}>
+        <span className={styles.logo}>ZADA ENERJİ</span>
+      </div>
+      <ul className={styles.navList}>
         <li className={styles.navItem}>
           <Link href="/">Anasayfa</Link>
         </li>
@@ -38,11 +41,9 @@ const Navbar = () => {
         <li className={styles.navItem}>
           <Link href="/project">Projemiz</Link>
         </li>
-      </ul>}
+      </ul>
     </nav>
   );
 };
 
 export default Navbar;
-
-
