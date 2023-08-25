@@ -1,8 +1,8 @@
 // components/Navbar.js
 
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
-import styles from './Navbar.module.css';
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const [isNavVisible, setNavVisible] = useState(true);
@@ -18,13 +18,13 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  const navClass = `${styles.navbar} ${isNavVisible ? '' : styles.hidden}`;
+  const navClass = `${styles.navbar} ${isNavVisible ? "" : styles.hidden}`;
 
   return (
     <nav className={navClass}>
@@ -40,6 +40,9 @@ const Navbar = () => {
         </li>
         <li className={styles.navItem}>
           <Link href="/project">Projemiz</Link>
+        </li>
+        <li className={styles.navItem}>
+          <Link href="/faq">SSS</Link> {/* Yeni bağlantı */}
         </li>
       </ul>
     </nav>

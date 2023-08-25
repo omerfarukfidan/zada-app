@@ -1,0 +1,35 @@
+/* styles/faq.module.css */
+
+.faqContainer {
+    margin-top: 60px;
+    padding: 40px 20px;
+  }
+  
+  .faqSection {
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faqQuestion {
+    padding: 20px;
+    background-color: #f8f8f8;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .faqAnswer {
+    padding: 20px;
+    background-color: #fff;
+    display: none;
+  }
+  
+  .faqAnswer.active {
+    display: block;
+  }
+  
