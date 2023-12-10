@@ -39,7 +39,7 @@ const Footer = () => {
           </a>
         </div>
         <div>
-          <p>Geleceğe güç ver! - Website by: Ömer Faruk Fidan</p>
+          <p>Geleceğe güç ver! - Website by: Ömer Faruk Fidan & Özgenur Yıldız</p>
         </div>
       </footer>
       <div style={{ marginBottom: "80px" }}>{/* Footer yüksekliği kadar boşluk bırakın */}</div>
